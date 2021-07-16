@@ -1,0 +1,100 @@
+.header
+  position: relative
+  padding-top: 80px
+  margin: 0
+  background: url(../images/header-bg.jpg) no-repeat center
+  &::after
+    content: ''
+    background-color: rgba(0,0,0,.7)
+    height: 100%
+    position: absolute
+    width: 100%
+    top: 0
+    left: 0
+    z-index: 1
+  &__top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+    z-index: 2
+  &__logo
+    max-width: 137px
+  &__burger-menu
+    border: none
+    background: none
+    text-transform: uppercase
+    color: $light
+  &__main
+    position: relative
+    z-index: 2
+  &__wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    flex-wrap: wrap
+    max-width: 818px
+    margin: auto
+    margin-top: 189px
+    margin-bottom: 30px
+  &__title
+    font-size: 120px
+    line-height: 132px
+    text-align: center
+    letter-spacing: 0.09em
+    text-transform: uppercase
+  &__button-works
+    font-size: 12px
+    line-height: 13px
+    text-align: center
+    letter-spacing: 0.15em
+    text-transform: uppercase
+    color: $light
+    background: rgba(0, 0, 0, 0.4)
+    border: 1px solid #FFFFFF
+    padding: 19px 30px 16px
+    margin-bottom: 157px
+  &__gradient
+    height: 75px
+    background: linear-gradient(0deg, #3B181E 3.33%, rgba(59, 24, 30, 0) 100%)
+  &-catalog
+    position: absolute
+    right: -89px
+    bottom: 110px
+    color: inherit
+    transform: rotate(90deg)
+    text-align: center
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 211px
+    &__text
+      font-size: 20px
+      line-height: 22px
+      letter-spacing: 0.06em
+    &__icon
+      transform: rotate(-90deg)
+.burger-menu
+  display: flex
+  &__lines
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin-right: 15px
+  &__line
+    font-family: 'Forum', cursive
+    width: 23px
+    border: 1px solid #FFFFFF
+    margin-top: 5px
+  &__text
+    font-family: 'Forum', cursive
+    font-size: 20px
+    line-height: 22px
+    letter-spacing: 0.06em
+.socials
+  position: absolute
+  bottom: 47px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 172px

@@ -1,0 +1,206 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Forum', cursive;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #3B181E;
+}
+
+.container {
+  max-width: 1734px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  position: relative;
+  padding-top: 80px;
+  margin: 0;
+  background: url(../images/header-bg.jpg) no-repeat center;
+}
+
+.header::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.header__logo {
+  max-width: 137px;
+}
+
+.header__burger-menu {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header__main {
+  position: relative;
+  z-index: 2;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 818px;
+  margin: auto;
+  margin-top: 189px;
+  margin-bottom: 30px;
+}
+
+.header__title {
+  font-size: 120px;
+  line-height: 132px;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.header__button-works {
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #FFFFFF;
+  padding: 19px 30px 16px;
+  margin-bottom: 157px;
+}
+
+.header__gradient {
+  height: 75px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(3.33%, #3B181E), to(rgba(59, 24, 30, 0)));
+  background: linear-gradient(0deg, #3B181E 3.33%, rgba(59, 24, 30, 0) 100%);
+}
+
+.header-catalog {
+  position: absolute;
+  right: -89px;
+  bottom: 110px;
+  color: inherit;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 211px;
+}
+
+.header-catalog__text {
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+}
+
+.header-catalog__icon {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.burger-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.burger-menu__lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
+}
+
+.burger-menu__line {
+  font-family: 'Forum', cursive;
+  width: 23px;
+  border: 1px solid #FFFFFF;
+  margin-top: 5px;
+}
+
+.burger-menu__text {
+  font-family: 'Forum', cursive;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+}
+
+.socials {
+  position: absolute;
+  bottom: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 172px;
+}
+/*# sourceMappingURL=style.css.map */
