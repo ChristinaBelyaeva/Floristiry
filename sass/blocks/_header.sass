@@ -2,7 +2,7 @@
   position: relative
   padding-top: 80px
   margin: 0
-  background: url(../images/header-bg.jpg) no-repeat center
+  background: url(../images/header-bg.jpg) no-repeat center / cover
   &::after
     content: ''
     background-color: rgba(0,0,0,.7)
@@ -54,6 +54,9 @@
     border: 1px solid #FFFFFF
     padding: 19px 30px 16px
     margin-bottom: 157px
+    &:hover
+      color: $dark
+      background: $light
   &__gradient
     height: 75px
     background: linear-gradient(0deg, #3B181E 3.33%, rgba(59, 24, 30, 0) 100%)
@@ -74,6 +77,8 @@
       letter-spacing: 0.06em
     &__icon
       transform: rotate(-90deg)
+  &__arrow
+    display: none
 .burger-menu
   display: flex
   &__lines
@@ -93,8 +98,14 @@
     letter-spacing: 0.06em
 .socials
   position: absolute
-  bottom: 47px
+  bottom: 0
   display: flex
   flex-direction: column
   justify-content: space-between
   height: 172px
+  &__icon
+    fill: none
+    stroke: $light
+    &:hover
+      fill: $light
+      stroke: $main-bg-color
