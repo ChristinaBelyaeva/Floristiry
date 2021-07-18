@@ -11,10 +11,14 @@
       line-height: 77px
       text-align: center
       letter-spacing: 0.09em
-//     max-width: 700px
+      margin-bottom: 82px
 @media (max-width: 768px)
   .header
+    padding-top: 38px
+    padding-bottom: 55px
+    background-size: cover
     &__wrapper
+      margin-top: 180px
       margin-bottom: 0
     &__mouse
       display: none
@@ -24,12 +28,12 @@
       display: none
     &__arrow
       display: block
+      margin: 0 auto
       width: 29px
-      height: 29px
-      margin: auto
-      margin-top: 35px
   .burger-menu
     align-items: start
+    &__line
+      width: 35px
     &__text
       display: none
   .socials
@@ -39,6 +43,7 @@
     height: 60px
     width: 460px
     margin: auto
+    padding-bottom: 35px
     &__link
       display: flex
       justify-content: space-evenly
@@ -49,6 +54,38 @@
       width: 55px
     &__icon
       align-self: center
-
-// @media (max-width: 576px)
-//   .container
+@media (max-width: 576px)
+  .header
+    padding-top: 0
+    &__wrapper
+      margin-top: 103px
+    &__top
+      background-color: $main-bg-color
+      width: 99%
+      left: -3%
+      padding: 15px 30px 20px
+    &__title
+      font-family: "playfair_display", cursive
+      font-size: 30px
+      line-height: 42px
+      text-align: center
+      letter-spacing: 0.09em
+      max-width: 238px
+      margin-bottom: 35px
+    &-arrow
+      &__icon
+        width: 14px
+        height: 14px
+  .burger-menu
+    &__line
+      width: 37px
+  .socials
+    width: 260px
+    height: 35px
+    padding-bottom: 30px
+    &__link
+      width: 35px
+      height: 35px
+    &__icon
+      width: 18px
+      height: 18px

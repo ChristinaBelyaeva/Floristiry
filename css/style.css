@@ -1,6 +1,13 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+@font-face {
+  font-family: "playfair_display";
+  src: url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2");
+  src: url("../fonts/PlayfairDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
 }
 
 body {
@@ -123,6 +130,8 @@ button {
 }
 
 .header__gradient {
+  position: relative;
+  z-index: 2;
   height: 75px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(3.33%, #3B181E), to(rgba(59, 24, 30, 0)));
   background: linear-gradient(0deg, #3B181E 3.33%, rgba(59, 24, 30, 0) 100%);
@@ -229,11 +238,18 @@ button {
     line-height: 77px;
     text-align: center;
     letter-spacing: 0.09em;
+    margin-bottom: 82px;
   }
 }
 
 @media (max-width: 768px) {
+  .header {
+    padding-top: 38px;
+    padding-bottom: 55px;
+    background-size: cover;
+  }
   .header__wrapper {
+    margin-top: 180px;
     margin-bottom: 0;
   }
   .header__mouse {
@@ -247,15 +263,16 @@ button {
   }
   .header__arrow {
     display: block;
+    margin: 0 auto;
     width: 29px;
-    height: 29px;
-    margin: auto;
-    margin-top: 35px;
   }
   .burger-menu {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+  }
+  .burger-menu__line {
+    width: 35px;
   }
   .burger-menu__text {
     display: none;
@@ -272,6 +289,7 @@ button {
     height: 60px;
     width: 460px;
     margin: auto;
+    padding-bottom: 35px;
   }
   .socials__link {
     display: -webkit-box;
@@ -291,6 +309,50 @@ button {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding-top: 0;
+  }
+  .header__wrapper {
+    margin-top: 103px;
+  }
+  .header__top {
+    background-color: #3B181E;
+    width: 99%;
+    left: -3%;
+    padding: 15px 30px 20px;
+  }
+  .header__title {
+    font-family: "playfair_display", cursive;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    max-width: 238px;
+    margin-bottom: 35px;
+  }
+  .header-arrow__icon {
+    width: 14px;
+    height: 14px;
+  }
+  .burger-menu__line {
+    width: 37px;
+  }
+  .socials {
+    width: 260px;
+    height: 35px;
+    padding-bottom: 30px;
+  }
+  .socials__link {
+    width: 35px;
+    height: 35px;
+  }
+  .socials__icon {
+    width: 18px;
+    height: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
