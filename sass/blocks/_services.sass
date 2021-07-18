@@ -1,0 +1,106 @@
+.services
+  padding: 170px 0 106px
+  position: relative
+  &__background
+    position: absolute
+    left: 50%
+    top: 207px
+    transform: translateX(-50%)
+    white-space: nowrap
+    font-size: 220px
+    line-height: 243px
+    text-align: center
+    letter-spacing: 0.06em
+    text-transform: uppercase
+    color: $light
+    opacity: 0.03
+  &__title
+    font-size: 30px
+    line-height: 33px
+    letter-spacing: 0.06em
+    text-transform: uppercase
+    text-align: center
+    margin: 0
+    margin-bottom: 98px
+    &::after
+      content: ''
+      display: block
+      margin: auto
+      margin-top: 22px
+      width: 85px
+      background-color: $light
+      height: 1px
+  &-container
+    max-width: 1500px
+    overflow: visible
+  &-wrapper
+    overflow: visible
+  &-slide
+    position: relative
+    width: 330px
+    height: 450px
+    &:not(:last-child)
+      margin-right: 60px
+    &:hover
+      // opacity: 0.6
+      &:after
+        content: ''
+        border: 1px solid rgba(255, 255, 255, 0.2)
+        position: absolute
+        top: -10px
+        left: -10px
+        width: 350px
+        height: 470px
+        z-index: -1
+      .services-slide__button
+        display: block
+        transform: translateY(75%)
+        transition-duration: 0.3s
+        margin-left: 20px
+        opacity: 1
+      .services-slide__title
+        bottom: 100px
+      .services-slide__image
+        opacity: 0.6
+      .services-slide__page
+        flex-direction: row-reverse
+    &__page
+      position: absolute
+      top: 36px
+      left: 20px
+      display: flex
+      align-items: end
+      justify-content: space-between
+      width: 102px
+    &__number
+      font-size: 20px
+      line-height: 22px
+      text-transform: uppercase
+    &__line
+      width: 70px
+      height: 0
+      border: 1px solid #FFFFFF
+    &__title
+      position: absolute
+      bottom: 15px
+      left: 20px
+      font-size: 16px
+      line-height: 27px
+      letter-spacing: 0.1em
+      text-transform: uppercase
+      color: inherit
+      opacity: 0.9
+      margin: 0
+    &__button
+      position: absolute
+      bottom: 59px
+      padding: 19px 0 16px
+      font-size: 12px
+      line-height: 13px
+      text-align: center
+      letter-spacing: 0.15em
+      text-transform: uppercase
+      color: #010001
+      background-color: $light
+      display: none
+      width: 199px

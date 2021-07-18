@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Floristry</title>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  
   <link rel="preconnect"
     href="https://fonts.googleapis.com">
   <link rel="preconnect"
@@ -12,6 +16,8 @@
     crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -82,5 +88,76 @@
     <div class="header__gradient"></div>
     <!-- /.header__gradient -->
   </header>
+
+  <section class="services">
+    <div class="container">
+      <span class="services__background">Каталог услуг</span>
+      <h2 class="services__title">Каталог услуг</h2>
+
+      <div class="swiper-container services-container">
+        <div class="swiper-wrapper services-wrapper">
+          <div class="swiper-slide services-slide services-slide--wedding">
+            <img src="images/services/wedding.jpg" alt="фотография свадебный букет" class="services-slide__image">
+            <div class="services-slide__page">
+              <span class="services-slide__number">01</span>
+              <span class="services-slide__line"></span>
+            </div>
+            <!-- /.services-slide__page -->
+            <!-- .services-blackout -->
+            <h3 class="services-slide__title">Букет невесты и свадебное оформление</h3>
+            <a href="#" class="services-slide__button">Смотреть работы</a>
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide services-slide services-slide--celebrations">
+            <img src="images/services/celebrations.jpg"
+              alt="фотография букет на торжество"
+              class="services-slide__image">
+            <div class="services-slide__page">
+              <span class="services-slide__number">02</span>
+              <span class="services-slide__line"></span>
+            </div>
+            <!-- /.services-slide__page -->
+            <h3 class="services-slide__title">Букеты на торжества</h3>
+            <a href="#" class="services-slide__button">Смотреть работы</a>
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide services-slide services-slide--compositions">
+            <img src="images/services/compositions.jpg"
+              alt="фотография букет композиция"
+              class="services-slide__image">
+            <div class="services-slide__page">
+              <span class="services-slide__number">03</span>
+              <span class="services-slide__line"></span>
+            </div>
+            <!-- /.services-slide__page -->
+            <h3 class="services-slide__title">Композиции</h3>
+            <a href="#" class="services-slide__button">Смотреть работы</a>
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide services-slide services-slide--events">
+            <img src="images/services/events.png"
+              alt="фотография оформление мероприятий"
+              class="services-slide__image">
+            <div class="services-slide__page">
+              <span class="services-slide__number">04</span>
+              <span class="services-slide__line"></span>
+            </div>
+            <!-- /.services-slide__page -->
+            <h3 class="services-slide__title">Оформление мероприятий</h3>
+            <a href="#" class="services-slide__button">Смотреть работы</a>
+          </div>
+          <!-- /.swiper-slide -->
+        </div>
+        <!-- /.swiper-wrapper -->
+        
+        <div class="swiper-pagination"></div> <!-- If we need pagination -->
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <!-- /.swiper-container  -->
+    </div>
+    <!-- /.container -->
+  </section>
 </body>
 </html>
