@@ -1,17 +1,40 @@
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.services-container', {
+  observer: true,
   // Optional parameters
   // loop: true,
-  slidesPerView: auto,
-  spaceBetween: 115,
-  centeredSlides: true,
+  // watchOverflow: true,
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '.services-pagination',
+    // type: 'custom',
+    clickable: true,
+    renderBullet: function (index, className) {
+      console.log(index, className);
+      return '<span class="' + className + '"></span>';
+  },
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 230,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 60,
+    },
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 60,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 60,
+    },
+    1610: {
+      slidesPerView: 4,
+      spaceBetween: 60,
+    }
   },
 });

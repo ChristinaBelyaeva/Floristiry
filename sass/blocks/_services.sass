@@ -33,15 +33,13 @@
   &-container
     max-width: 1500px
     overflow: visible
-  &-wrapper
-    overflow: visible
   &-slide
     position: relative
     width: 330px
     height: 450px
     background-color: black
-    &:not(:last-child)
-      margin-right: 60px
+    // &:not(:last-child)
+    //   margin-right: 60px
     &:hover
       // opacity: 0.6
       &:after
@@ -65,6 +63,8 @@
         opacity: 0.6
       .services-slide__page
         flex-direction: row-reverse
+    &__image
+      height: 100%
     &__page
       position: absolute
       top: 36px
@@ -105,3 +105,16 @@
       background-color: $light
       display: none
       width: 199px
+.swiper
+  &-pagination
+    display: none
+    &-bullet
+      width: 63px
+      height: 3px
+      background-color: $light
+      opacity: 0.3
+      // bottom: 0
+      left: 50%
+      transition: translateX(-50%)
+      &-active
+        opacity: 1
