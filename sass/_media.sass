@@ -23,6 +23,30 @@
       text-align: center
       letter-spacing: 0.09em
       margin-bottom: 82px
+  // .services
+  //   &-container
+  //     max-width: 720px
+      // height: 425px
+  .promotion
+    padding: 0 0 100px
+    &-wrapper
+      flex-direction: column-reverse
+    &__image
+      width: 100%
+      margin-bottom: 30px
+    &-info
+      align-items: center
+      max-width: 100%
+      &__title
+        margin-bottom: 40px
+        text-align: center
+        &::after
+          margin: auto
+          margin-top: 20px
+      &__text
+        margin-bottom: 15px
+        text-align: center
+        max-width: 453px
 @media (max-width: 768px)
   .header
     padding-top: 38px
@@ -66,8 +90,9 @@
     &__icon
       align-self: center
   .services
+    padding: 100px 0 50px
     &-container
-      max-width: 288px
+      max-width: 600px
       height: 425px
     &-wrapper
       max-height: 415px
@@ -79,6 +104,10 @@
           height: 412px
       &__image
         width: 288px
+  .swiper
+    &-pagination
+      &-bullets
+        top: 411px
 @media (max-width: 576px)
   .header
     padding-top: 0
@@ -86,7 +115,7 @@
       margin-top: 103px
     &__top
       background-color: $main-bg-color
-      width: 99%
+      width: 106%
       left: -3%
       padding: 15px 30px 20px
     &__title
@@ -114,3 +143,26 @@
     &__icon
       width: 18px
       height: 18px
+  .services
+    padding-top: 100px
+    &__title
+      text-align: left
+      margin-bottom: 20px
+      &::after
+        margin: 0
+        margin-top: 20px
+  .promotion
+    padding-top: 20px
+    &-info
+      align-items: start
+      &__title
+        text-align: left
+        margin-bottom: 20px
+        &::after
+          margin: 0
+          margin-top: 20px
+      &__text
+        text-align: left
+        margin-bottom: 40px
+    &__image
+      height: 300px
