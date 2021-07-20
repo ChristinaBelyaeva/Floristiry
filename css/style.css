@@ -241,7 +241,7 @@ button {
 .services__background {
   position: absolute;
   left: 50%;
-  top: 207px;
+  top: 183px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   white-space: nowrap;
@@ -398,6 +398,76 @@ button {
 
 .swiper-pagination-bullet-active {
   opacity: 1;
+}
+
+.promotion {
+  padding: 64px 0 290px;
+}
+
+.promotion-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.promotion-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 352px;
+}
+
+.promotion-info__title {
+  font-size: 30px;
+  line-height: 51px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.promotion-info__title::after {
+  content: '';
+  display: block;
+  margin-top: 16px;
+  width: 85px;
+  background-color: #fff;
+  height: 1px;
+}
+
+.promotion-info__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 45px;
+}
+
+.promotion-info__button {
+  font-size: 11px;
+  line-height: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #010001;
+  width: 220px;
+  height: 45px;
+}
+
+.promotion__image {
+  width: 697px;
+  height: 410px;
+  background: url(../images/promotion.jpg) no-repeat center/cover;
 }
 
 @media (max-width: 1688px) {
