@@ -18,21 +18,24 @@ const swiper = new Swiper('.services-container', {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 230,
+      slidesPerGroup: 1,
+      spaceBetween: 50,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 60,
+      slidesPerGroup: 2,
+      spaceBetween: 28,
     },
-    992: {
-      slidesPerView: 2,
-      spaceBetween: 60,
-    },
+    // 992: {
+    //   slidesPerView: 2,
+    //   spaceBetween: 28,
+    // },
     1200: {
-      slidesPerView: 3,
-      spaceBetween: 60,
+      slidesPerView: 4,
+      slidesPerGroup: 1,
+      spaceBetween: 20,
     },
-    1610: {
+    1600: {
       slidesPerView: 4,
       spaceBetween: 60,
     }

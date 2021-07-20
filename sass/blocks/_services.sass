@@ -2,6 +2,7 @@
   padding: 170px 0 106px
   position: relative
   &__background
+    display: none
     position: absolute
     left: 50%
     top: 183px
@@ -31,31 +32,28 @@
       background-color: $light
       height: 1px
   &-container
-    max-width: 1500px
+    max-width: 310px
     overflow: hidden
+    height: 430px
   &-wrapper
     align-items: center
     padding-left: 10px
-    height: 473px
-    align-items: center
+    height: 420px
   &-slide
     position: relative
-    width: 330px
-    height: 450px
-    background-color: black
-    // &:not(:last-child)
-    //   margin-right: 60px
+    width: 288px
+    height: 392px
     &:hover
-      // opacity: 0.6
       &:after
         content: ''
         border: 1px solid rgba(255, 255, 255, 0.2)
         position: absolute
         top: -10px
         left: -10px
-        width: 350px
-        height: 470px
+        width: 308px
+        height: 412px
         z-index: -1
+        background-color: rgba(0,0 ,0 ,0.2 )
       .services-slide__button
         display: block
         transform: translateY(75%)
@@ -70,6 +68,7 @@
         flex-direction: row-reverse
     &__image
       height: 100%
+      width: 288px
     &__page
       position: absolute
       top: 36px
@@ -110,14 +109,16 @@
       background-color: $light
       display: none
       width: 199px
+  &-pagination
+    top: 415px
 .swiper
   &-pagination
-    display: none
     &-bullets
-      top: 470px
+      // height: 3px
     &-bullet
+      padding: 2px
+      height: 1px
       width: 63px
-      height: 3px
       background-color: $light
       opacity: 0.3
       // bottom: 0
