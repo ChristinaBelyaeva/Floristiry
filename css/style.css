@@ -478,10 +478,16 @@ button {
   border: none;
 }
 
+.promotion-info__button:hover {
+  color: #000000;
+  background: #fff;
+}
+
 .promotion__image {
   width: 697px;
   height: 410px;
   background: url(../images/promotion.jpg) no-repeat center/cover;
+  border-radius: 15px;
 }
 
 @media (max-width: 992px) {
@@ -754,6 +760,13 @@ button {
   .services-container {
     max-width: 1500px;
     overflow: visible;
+    height: 450px;
+  }
+  .services-wrapper {
+    height: 450px;
+  }
+  .services-slide {
+    height: 450px;
   }
   .services-slide:hover:after {
     width: 345px;
