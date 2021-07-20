@@ -26,6 +26,15 @@
         margin-bottom: 15px
         text-align: center
         max-width: 453px
+  .footer
+    &-wrapper
+      height: 263px
+    &-info
+      flex-direction: column
+      height: 198px
+      &__link
+        font-size: 20px
+        line-height: 22px
 @media (max-width: 768px)
   .header
     padding-top: 38px
@@ -36,6 +45,24 @@
       margin-bottom: 0
     &__mouse
       display: none
+    &-socials
+      position: static
+      flex-direction: row
+      align-items: center
+      height: 60px
+      width: 460px
+      margin: auto
+      padding-bottom: 35px
+      &__link
+        display: flex
+        justify-content: space-evenly
+        align-self: center
+        background-color: $main-bg-color
+        border-radius: 50%
+        height: 55px
+        width: 55px
+      &__icon
+        align-self: center
     &-catalog
       display: none
     &__gradient
@@ -50,24 +77,6 @@
       width: 35px
     &__text
       display: none
-  .socials
-    position: static
-    flex-direction: row
-    align-items: center
-    height: 60px
-    width: 460px
-    margin: auto
-    padding-bottom: 35px
-    &__link
-      display: flex
-      justify-content: space-evenly
-      align-self: center
-      background-color: $main-bg-color
-      border-radius: 50%
-      height: 55px
-      width: 55px
-    &__icon
-      align-self: center
   .services
     padding: 100px 0 50px
 @media (max-width: 576px)
@@ -88,6 +97,16 @@
       letter-spacing: 0.09em
       max-width: 238px
       margin-bottom: 35px
+    &-socials
+      width: 260px
+      height: 35px
+      padding-bottom: 30px
+      &__link
+        width: 35px
+        height: 35px
+      &__icon
+        width: 18px
+        height: 18px
     &-arrow
       &__icon
         width: 14px
@@ -95,16 +114,6 @@
   .burger-menu
     &__line
       width: 37px
-  .socials
-    width: 260px
-    height: 35px
-    padding-bottom: 30px
-    &__link
-      width: 35px
-      height: 35px
-    &__icon
-      width: 18px
-      height: 18px
   .services
     padding-top: 100px
     &__title
@@ -128,3 +137,8 @@
         margin-bottom: 40px
     &__image
       height: 300px
+  .footer
+    &-info
+      &__link
+        font-size: 16px
+        line-height: 18px
