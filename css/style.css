@@ -1056,7 +1056,7 @@ template {
   position: fixed;
   top: 50%;
   left: 50%;
-  max-width: 716px;
+  width: 716px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 101;
@@ -1225,6 +1225,23 @@ template {
     top: 40px;
     right: 40px;
     width: 21px;
+  }
+  .feedback__dialog {
+    width: 464px;
+  }
+  .feedback__image {
+    display: none;
+  }
+  .feedback-wrapper {
+    padding: 78px 44px;
+  }
+  .feedback__title {
+    font-size: 30px;
+    line-height: 33px;
+  }
+  .feedback__form {
+    width: 374px;
+    height: 187px;
   }
 }
 
@@ -1418,6 +1435,20 @@ template {
   }
   .nav__close {
     top: 25px;
+  }
+  .feedback__dialog {
+    width: 288px;
+  }
+  .feedback-wrapper {
+    padding: 40px 20px;
+  }
+  .feedback__title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .feedback__form {
+    width: 250px;
+    height: 176px;
   }
 }
 
