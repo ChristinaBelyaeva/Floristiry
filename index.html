@@ -243,87 +243,121 @@
     <!-- /.container -->
   </footer>
 
-  <div class="modal" data-modal="1">
-    <div class="modal__overlay js-overlay"></div>
-    <!-- /.modal__overlay -->
-    <div class="modal__dialog js-dialog">
+  <div class="modal nav" data-modal="1">
+    <div class="nav__overlay"></div>
+    <!-- /.nav__overlay -->
+    <div class="nav__dialog">
       <img src="images/logo.png"
         alt="Логотип весна всегда"
-        class="modal__logo">
-      <ul class="modal__list">
-        <li class="modal__item">
+        class="nav__logo">
+      <ul class="nav__list">
+        <li class="nav__item">
           <a href="#"
-            class="modal__link">свадебная
+            class="nav__link">свадебная
             флористика</a>
         </li>
-        <li class="modal__item">
+        <li class="nav__item">
           <a href="#"
-            class="modal__link">букеты на&nbsp;любые мероприятия</a>
+            class="nav__link">букеты на&nbsp;любые мероприятия</a>
         </li>
-        <li class="modal__item">
+        <li class="nav__item">
           <a href="#"
-            class="modal__link">композиции</a>
+            class="nav__link">композиции</a>
         </li>
-        <li class="modal__item">
+        <li class="nav__item">
           <a href="#"
-            class="modal__link">оформление
+            class="nav__link">оформление
             мероприятий</a>
         </li>
       </ul>
     </div>
-    <!-- /.modal__dialog -->
+    <!-- /.nav__dialog -->
     <button href="#"
-      class="modal__close js-modal-close">
+      class="nav__close js-modal-close">
       <img src="images/icons/cross.svg "
         alt="Кнопка закрытия меню"
-        class="modal__icon">
+        class="nav__icon">
     </button>
-    <div class="modal-socials">
+    <div class="nav-socials">
       <a href="#"
-        class="modal-socials__link">
-        <svg class="modal-socials__icon"
+        class="nav-socials__link">
+        <svg class="nav-socials__icon"
           width="25"
           height="25">
           <use href="sprite-socials.svg#instagram"></use>
         </svg>
       </a>
       <a href="#"
-        class="modal-socials__link">
-        <svg class="modal-socials__icon"
+        class="nav-socials__link">
+        <svg class="nav-socials__icon"
           width="25"
           height="25">
           <use href="sprite-socials.svg#facebook"></use>
         </svg>
       </a>
       <a href="#"
-        class="modal-socials__link">
-        <svg class="modal-socials__icon"
+        class="nav-socials__link">
+        <svg class="nav-socials__icon"
           width="25"
           height="25">
           <use href="sprite-socials.svg#whatsapp"></use>
         </svg>
       </a>
       <a href="#"
-        class="modal-socials__link">
-        <svg class="modal-socials__icon"
+        class="nav-socials__link">
+        <svg class="nav-socials__icon"
           width="25"
           height="25">
           <use href="sprite-socials.svg#vk"></use>
         </svg>
       </a>
     </div>
-    <!-- /.socials modal__socials -->
+    <!-- /.socials nav__socials -->
   </div>
   <!-- /.modal -->
 
-  <div class="modal"
-    data-modal="2"> Второе модальное окно
-    <button href="#"
-      class="modal__close js-modal-close">
-      <img src="images/icons/cross.svg "
-        alt="Кнопка закрытия меню"
-        class="modal__icon">
-    </button>
+  <div class="modal feedback"
+    data-modal="2">
+    <div class="feedback__overlay"></div>
+    <!-- /.feedback__overlay -->
+    <div class="feedback__dialog">
+      <img src="images/feedback-image.png" alt="Фотография цветка" class="feedback__image">
+      <div class="feedback-wrapper">
+        <h2 class="feedback__title">Оставьте свой номер и мы вам перезвоним!</h2>
+        <form action="#"
+          method="POST"
+          class="feedback__form form">
+          <div class="feedback__input">
+            <input type="text"
+              class="feedback__name"
+              placeholder="Имя"
+              name="name"
+              required>
+          </div>
+          <!-- /.feedback__input -->
+          <div class="feedback__input">
+            <input type="tel"
+              class="feedback__phone"
+              placeholder="Телефон"
+              name="phone"
+              required>
+          </div>
+          <!-- /.feedback__input -->
+          <button class="button feedback__button"
+            type="submit">Позвоните мне
+          </button>
+        </form>
+      </div>
+      <!-- /.feedback-wrapper -->
+
+      <button href="#"
+        class="feedback__close js-modal-close">
+        <img src="images/icons/cross.svg "
+          alt="Кнопка закрытия меню"
+          class="feedback__icon">
+      </button>
+    </div>
+    <!-- /.feedback__dialog -->
   </div>
 </body>
 </html>

@@ -41,8 +41,10 @@ const swiper = new Swiper('.services-container', {
 
 document.addEventListener('DOMContentLoaded', function () {
   var modalButtons = document.querySelectorAll('.js-open-modal'),
-    overlay = document.querySelector('.js-overlay'),
-    dialog = document.querySelector('.js-dialog'),
+    overlayNav = document.querySelector('.nav__overlay'),
+    overlayFeedback = document.querySelector('.feedback__overlay'),
+    dialogNav = document.querySelector('.nav__dialog'),
+    dialogFeedback = document.querySelector('.feedback__dialog'),
     closeButtons = document.querySelectorAll('.js-modal-close');
     body = document.querySelector('.body');
   
@@ -56,8 +58,10 @@ document.addEventListener('DOMContentLoaded', function () {
         modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
       
         modalElem.classList.add('modal--active');
-        overlay.classList.add('modal__overlay--active');
-      dialog.classList.add('modal__dialog--active');
+        overlayNav.classList.add('nav__overlay--active');
+        overlayFeedback.classList.add('feedback__overlay--active');
+      dialogNav.classList.add('nav__dialog--active');
+      dialogFeedback.classList.add('feedback__dialog--active');
       body.classList.add('modal-open');
     });
   });
@@ -67,8 +71,10 @@ document.addEventListener('DOMContentLoaded', function () {
       var parentModal = this.closest('.modal');
       
       parentModal.classList.remove('modal--active');
-      overlay.classList.remove('modal__overlay--active');
-      dialog.classList.remove('modal__dialog--active');
+      overlayNav.classList.remove('nav__overlay--active');
+      overlayFeedback.classList.remove('feedback__overlay--active');
+      dialogNav.classList.remove('nav__dialog--active');
+      dialogFeedback.classList.remove('feedback__dialog--active');
       body.classList.remove('modal-open');
     });
   });
