@@ -20,12 +20,12 @@
     href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="body">
   <header class="header">
     <div class="container">
       <div class="header__top">
         <img src="images/logo.png" alt="Logo: Весна всегда" class="header__logo">
-        <button class="burger-menu header__burger-menu">
+        <button class="burger-menu header__burger-menu js-open-modal" data-modal="1">
           <span class="burger-menu__lines">
             <span class="burger-menu__line"></span>
             <span class="burger-menu__line"></span>
@@ -168,7 +168,7 @@
           <h2 class="promotion-info__title">Акционные предложения</h2>
           <p class="promotion-info__text">При заказе свадебного оформления предоставляется скидка на букет невесты и бутоньерку
             в размере 30%</p>
-          <button class="promotion-info__button">Заказать оформление</button>
+          <button class="promotion-info__button js-open-modal" data-modal="2">Заказать оформление</button>
         </div>
         <!-- /.promotion-info -->
         <div class="promotion__image">
@@ -242,5 +242,88 @@
     </div>
     <!-- /.container -->
   </footer>
+
+  <div class="modal" data-modal="1">
+    <div class="modal__overlay js-overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog js-dialog">
+      <img src="images/logo.png"
+        alt="Логотип весна всегда"
+        class="modal__logo">
+      <ul class="modal__list">
+        <li class="modal__item">
+          <a href="#"
+            class="modal__link">свадебная
+            флористика</a>
+        </li>
+        <li class="modal__item">
+          <a href="#"
+            class="modal__link">букеты на&nbsp;любые мероприятия</a>
+        </li>
+        <li class="modal__item">
+          <a href="#"
+            class="modal__link">композиции</a>
+        </li>
+        <li class="modal__item">
+          <a href="#"
+            class="modal__link">оформление
+            мероприятий</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.modal__dialog -->
+    <button href="#"
+      class="modal__close js-modal-close">
+      <img src="images/icons/cross.svg "
+        alt="Кнопка закрытия меню"
+        class="modal__icon">
+    </button>
+    <div class="modal-socials">
+      <a href="#"
+        class="modal-socials__link">
+        <svg class="modal-socials__icon"
+          width="25"
+          height="25">
+          <use href="sprite-socials.svg#instagram"></use>
+        </svg>
+      </a>
+      <a href="#"
+        class="modal-socials__link">
+        <svg class="modal-socials__icon"
+          width="25"
+          height="25">
+          <use href="sprite-socials.svg#facebook"></use>
+        </svg>
+      </a>
+      <a href="#"
+        class="modal-socials__link">
+        <svg class="modal-socials__icon"
+          width="25"
+          height="25">
+          <use href="sprite-socials.svg#whatsapp"></use>
+        </svg>
+      </a>
+      <a href="#"
+        class="modal-socials__link">
+        <svg class="modal-socials__icon"
+          width="25"
+          height="25">
+          <use href="sprite-socials.svg#vk"></use>
+        </svg>
+      </a>
+    </div>
+    <!-- /.socials modal__socials -->
+  </div>
+  <!-- /.modal -->
+
+  <div class="modal"
+    data-modal="2"> Второе модальное окно
+    <button href="#"
+      class="modal__close js-modal-close">
+      <img src="images/icons/cross.svg "
+        alt="Кнопка закрытия меню"
+        class="modal__icon">
+    </button>
+  </div>
 </body>
 </html>

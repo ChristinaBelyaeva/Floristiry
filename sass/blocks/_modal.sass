@@ -1,0 +1,92 @@
+.modal
+  opacity: 0
+  visibility: hidden
+  position: relative
+  &--active
+    width: 100vw
+    overflow: hidden
+    visibility: visible
+    opacity: 1
+    padding-top: 95px
+  &__overlay
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    background-color: $main-bg-color
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--active
+      visibility: visible
+      opacity: 1
+  &__dialog
+    position: fixed
+    top: 95px
+    left: 50%
+    max-width: 350px
+    color: $light
+    transform: translateX(-50%)
+    z-index: 101
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    text-align: center
+    &--active
+      visibility: visible
+      opacity: 1
+  &__logo
+    width: 158px
+  &__close
+    position: fixed
+    top: 104px
+    right: 96px
+    z-index: 101
+    background: none
+    border: none
+    width: 28px
+    height: 28px
+    padding: 0
+  &__list
+    list-style: none
+    padding: 0
+    margin: 0
+    margin-top: 200px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 500px
+    text-align: center
+  &__link
+    font-size: 35px
+    line-height: 39px
+    letter-spacing: 0.09em
+    text-transform: uppercase
+    color: rgba(255, 255, 255, 0.5)
+    &:hover
+      font-size: 45px
+      line-height: 50px
+      color: $light
+  &-socials
+    position: fixed
+    top: 75%
+    left: 95px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 172px
+    z-index: 101
+    &__icon
+      fill: none
+      stroke: $light
+      &:hover
+        fill: $light
+        stroke: $main-bg-color
+// стили для body чтобы убрать скролл
+.modal-open
+  max-height: 100vh
+  overflow: hidden

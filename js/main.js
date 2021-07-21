@@ -10,7 +10,6 @@ const swiper = new Swiper('.services-container', {
     // type: 'custom',
     clickable: true,
     renderBullet: function (index, className) {
-      console.log(index, className);
       return '<span class="' + className + '"></span>';
   },
   },
@@ -26,10 +25,6 @@ const swiper = new Swiper('.services-container', {
       slidesPerGroup: 2,
       spaceBetween: 28,
     },
-    // 992: {
-    //   slidesPerView: 2,
-    //   spaceBetween: 28,
-    // },
     1200: {
       slidesPerView: 4,
       slidesPerGroup: 1,
@@ -40,4 +35,41 @@ const swiper = new Swiper('.services-container', {
       spaceBetween: 60,
     }
   },
+});
+
+!function (e) { "function" != typeof e.matches && (e.matches = e.msMatchesSelector || e.mozMatchesSelector || e.webkitMatchesSelector || function (e) { for (var t = this, o = (t.document || t.ownerDocument).querySelectorAll(e), n = 0; o[n] && o[n] !== t;)++n; return Boolean(o[n]) }), "function" != typeof e.closest && (e.closest = function (e) { for (var t = this; t && 1 === t.nodeType;){ if (t.matches(e)) return t; t = t.parentNode } return null }) }(window.Element.prototype);
+
+document.addEventListener('DOMContentLoaded', function () {
+  var modalButtons = document.querySelectorAll('.js-open-modal'),
+    overlay = document.querySelector('.js-overlay'),
+    dialog = document.querySelector('.js-dialog'),
+    closeButtons = document.querySelectorAll('.js-modal-close');
+    body = document.querySelector('.body');
+  
+  console.log(closeButtons);
+  
+  modalButtons.forEach(function (item) {
+    item.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      var modalId = this.getAttribute('data-modal'),
+        modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+      
+        modalElem.classList.add('modal--active');
+        overlay.classList.add('modal__overlay--active');
+      dialog.classList.add('modal__dialog--active');
+      body.classList.add('modal-open');
+    });
+  });
+
+  closeButtons.forEach(function(item) {
+    item.addEventListener('click', function () {
+      var parentModal = this.closest('.modal');
+      
+      parentModal.classList.remove('modal--active');
+      overlay.classList.remove('modal__overlay--active');
+      dialog.classList.remove('modal__dialog--active');
+      body.classList.remove('modal-open');
+    });
+  });
 });
