@@ -37,6 +37,19 @@ const swiper = new Swiper('.services-container', {
   },
 });
 
+const slider = new Swiper('.slider-container', {
+  // Optional parameters
+  slidesPerView: 'auto',
+  // loop: true,
+  // slidesPerGroup: 1,
+  spaceBetween: 25,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider__button--next',
+  },
+});
+
 !function (e) { "function" != typeof e.matches && (e.matches = e.msMatchesSelector || e.mozMatchesSelector || e.webkitMatchesSelector || function (e) { for (var t = this, o = (t.document || t.ownerDocument).querySelectorAll(e), n = 0; o[n] && o[n] !== t;)++n; return Boolean(o[n]) }), "function" != typeof e.closest && (e.closest = function (e) { for (var t = this; t && 1 === t.nodeType;){ if (t.matches(e)) return t; t = t.parentNode } return null }) }(window.Element.prototype);
 
 document.addEventListener('DOMContentLoaded', function () {
