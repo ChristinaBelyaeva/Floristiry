@@ -1,3 +1,61 @@
+@media (max-width: 1500px)
+  .header
+    &__image
+      &--celebrations
+        background-position-x: left
+    &-wrapper
+      padding: 0
+      padding-top: 190px
+      padding-right: 20px
+      padding-left: 90px
+    &-link
+      right: 62px
+      bottom: 10px
+  .slider
+    &-container
+      max-width: 498px
+    &-slide
+      width: 100px !important
+      height: 100px !important
+    &__button
+      &--next
+        top: 28px
+@media (max-width: 1200px)
+  .header
+    &-secondary
+      flex-direction: column
+      align-items: center
+      &__top
+        position: static
+        padding: 30px 0 35px
+    &__image
+      height: 730px
+      width: 100%
+    &-wrapper
+      max-width: 95%
+      padding: 0
+      padding-top: 30px
+      align-items: left
+      &__title
+        max-width: 100%
+      &__text
+        max-width: 680px
+    &-link
+      display: none
+  .slider
+    &-container
+      order: -1
+      max-width: 680px
+      margin-bottom: 70px
+    &-slide
+      width: 145px !important
+      height: 145px !important
+    &__button
+      &--next
+        top: 50px
+  .footer
+    &-secondary
+      display: block
 @media (max-width: 992px)
   .header
     &__title
@@ -53,6 +111,9 @@
     &__form
       width: 374px
       height: 187px
+  .header
+    &__image
+      height: 518px
 @media (max-width: 768px)
   .header
     padding-top: 38px
@@ -110,6 +171,31 @@
       &:hover
         font-size: 45px
         line-height: 50px
+  .header
+    &-secondary
+      &__top
+        padding-top: 0
+    &-wrapper
+      &__title
+        font-size: 40px
+        line-height: 44px
+        margin-bottom: 30px
+      &__text
+        font-size: 20px
+        line-height: 24px
+      &__button
+        margin-bottom: 40px
+  .slider
+    &-container
+      order: 0
+      max-width: 95%
+      margin-bottom: 0
+    &-slide
+      height: 75px !important
+      width: 75px !important
+    &__button
+      &--next
+        display: none
 @media (max-width: 576px)
   .header
     padding-top: 0
@@ -200,3 +286,20 @@
     &__form
       width: 250px
       height: 176px
+  .header
+    &-secondary
+      &__top
+        padding: 18px 0
+    &-wrapper
+      &__title
+        font-size: 20px
+        line-height: 22px
+        margin-bottom: 30px
+      &__text
+        font-size: 18px
+        line-height: 22px
+        margin-bottom: 30px
+      &__button
+        height: 45px
+        width: 119px
+        margin-bottom: 50px
