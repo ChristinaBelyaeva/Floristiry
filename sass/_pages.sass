@@ -14,8 +14,14 @@
   &__image
     width: 976px
     height: 1080px
-    background: url(../images/celebrations/celebrations.png) no-repeat center / cover
-    // background-position-x: left
+    &--celebrations
+      background: url(../images/celebrations/celebrations.png) no-repeat center / cover
+    &--wedding
+      background: url(../images/wedding/wedding.jpg) no-repeat center / cover
+    &--compositions
+      background: url(../images/compositions/compositions.jpg) no-repeat center / cover
+    &--events
+      background: url(../images/events/events.jpg) no-repeat center / cover
   &-wrapper
     display: flex
     flex-direction: column
@@ -84,7 +90,7 @@
       width: 100%
   &__button
     &--next
-      background: url(../images/slider-arrow-next.svg) no-repeat center
+      background: url(../images/icons/slider-arrow-next.svg) no-repeat center
       width: 46px
       height: 46px
       position: absolute
@@ -93,7 +99,7 @@
       z-index: 100
       cursor: pointer
       &:hover
-        background: url(../images/slider-arrow-next-hover.svg) no-repeat center
+        background: url(../images/icons/slider-arrow-next-hover.svg) no-repeat center
 .footer
   &-secondary
     display: none

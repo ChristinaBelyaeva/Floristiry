@@ -874,9 +874,12 @@ template {
   padding: 0;
 }
 
-.footer-info__link {
+.footer-info__text {
   font-size: 16px;
   line-height: 18px;
+}
+
+.footer-info__link {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -983,11 +986,14 @@ template {
   text-align: center;
 }
 
-.nav__link {
+.nav__item {
   font-size: 35px;
   line-height: 39px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+}
+
+.nav__link {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1193,7 +1199,22 @@ template {
 .header__image {
   width: 976px;
   height: 1080px;
+}
+
+.header__image--celebrations {
   background: url(../images/celebrations/celebrations.png) no-repeat center/cover;
+}
+
+.header__image--wedding {
+  background: url(../images/wedding/wedding.jpg) no-repeat center/cover;
+}
+
+.header__image--compositions {
+  background: url(../images/compositions/compositions.jpg) no-repeat center/cover;
+}
+
+.header__image--events {
+  background: url(../images/events/events.jpg) no-repeat center/cover;
 }
 
 .header-wrapper {
@@ -1294,7 +1315,7 @@ template {
 }
 
 .slider__button--next {
-  background: url(../images/slider-arrow-next.svg) no-repeat center;
+  background: url(../images/icons/slider-arrow-next.svg) no-repeat center;
   width: 46px;
   height: 46px;
   position: absolute;
@@ -1305,7 +1326,7 @@ template {
 }
 
 .slider__button--next:hover {
-  background: url(../images/slider-arrow-next-hover.svg) no-repeat center;
+  background: url(../images/icons/slider-arrow-next-hover.svg) no-repeat center;
 }
 
 .footer-secondary {
@@ -1442,7 +1463,7 @@ template {
             flex-direction: column;
     height: 198px;
   }
-  .footer-info__link {
+  .footer-info__text {
     font-size: 20px;
     line-height: 22px;
   }
